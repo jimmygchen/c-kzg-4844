@@ -20,6 +20,7 @@ jobs:
       - uses: actions-rs/toolchain@v1
         with:
           toolchain: ${{ matrix.rust_version }}
+          default: true
       - name: Benchmark
         working-directory: bindings/rust
         run: cargo bench
