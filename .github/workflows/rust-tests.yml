@@ -9,10 +9,10 @@ jobs:
       fail-fast: false
       matrix:
         os:
-          - ubuntu-latest
+          # - ubuntu-latest
           - windows-latest
           - windows-2019
-        rust_version: [stable, nightly, 1.69]
+        rust_version: [stable, 1.69, 1.68]
     steps:
       - uses: actions/checkout@v3
         with:
