@@ -23,4 +23,4 @@ jobs:
           default: true
       - name: Benchmark
         working-directory: bindings/rust
-        run: cargo bench
+        run: cargo bench --locked
